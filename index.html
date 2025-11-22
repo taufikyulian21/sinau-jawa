@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="jv">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/0/0b/Javanese_script_na.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinau Aksara Jawa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Javanese&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              javanese: ['"Noto Sans Javanese"', 'sans-serif'],
+            },
+            colors: {
+              'javagold': '#FFD700',
+              'javabrown': '#8B4513',
+              'java-bg': '#FFF8E1',
+            },
+            backgroundImage: {
+              'batik-pattern': "url('https://www.transparenttextures.com/patterns/batik.png')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFF8E1;
+      }
+      .aksara-text {
+        font-family: 'Noto Sans Javanese', sans-serif;
+        line-height: 1.5;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

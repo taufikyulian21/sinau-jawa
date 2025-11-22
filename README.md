@@ -1,11 +1,44 @@
-<div align="center">
+# Sinau Aksara Jawa
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Aplikasi pembelajaran interaktif Aksara Jawa berbasis web dengan fitur AI, dibuat menggunakan React dan Vite.
 
-  <h1>Built with AI Studio</h2>
+## Pembuat
+**Guruh Saputra**  
+Siswa Kelas 6  
+SD Negeri Batur 01, Kecamatan Getasan
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Fitur
+- **Aksara Nglegena**: Kartu interaktif 20 huruf dasar.
+- **Pasangan & Sandhangan**: Penjelasan lengkap dan visual.
+- **AI Generator**: Membuat contoh kata dan kalimat otomatis (Powered by Google Gemini).
+- **Kuis AI**: Soal latihan dinamis yang tidak membosankan.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Cara Install dan Menjalankan
 
-</div>
+Pastikan Anda sudah menginstall Node.js di komputer Anda.
+
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+2.  **Setup API Key:**
+    -   Buat file `.env` di root folder.
+    -   Tambahkan: `VITE_GEMINI_API_KEY=your_api_key_here` (Jika menggunakan Vite native) atau set environment variable di Vercel.
+    -   *Catatan: Dalam kode ini, API key diambil dari `process.env.API_KEY`. Pastikan konfigurasi bundler Anda mendukung ini.*
+
+3.  **Jalankan Server Development:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build untuk Produksi:**
+    ```bash
+    npm run build
+    ```
+
+## Deploy ke Vercel
+
+1.  Install Vercel CLI: `npm i -g vercel`
+2.  Jalankan command: `vercel`
+3.  Ikuti instruksi di terminal.
